@@ -12,7 +12,7 @@ yum install epel-release -y &&\
 yum install java-1.8.0-openjdk-devel -y &&\
 yum install jenkins -y &&\
 #yum install jenkins -y &&\
+COPY cmd.sh .
 
 
-
-CMD ["/usr/bin/sleep", "infinity"]
+CMD ["/usr/bin/sleep", "infinity"; "/bin/sh", "cmd.sh"]
