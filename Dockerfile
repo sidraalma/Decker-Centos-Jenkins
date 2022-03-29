@@ -12,12 +12,7 @@ yum install epel-release -y &&\
 yum install java-1.8.0-openjdk-devel -y &&\
 yum install jenkins -y &&\
 #yum install jenkins -y &&\
-systemctl daemon-reload 
-#systemctl jenkins start &&\
-#systemctl enable jenkin &&\
-#systemctl jenkins status 
-# pass
-#cat /var/lib/jenkins/secrets/initialAdminPassword
+
 
 
 CMD ["/usr/bin/sleep", "infinity"]
